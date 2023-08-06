@@ -35,6 +35,9 @@ The 'Engineer' class will override the `calculateAnnualSalary()` method to inclu
 
 ### Desired Outcome
 
+https://github.com/TheCodePeople/JS-Emloyee-Class/assets/125884625/4f065609-2139-4c4e-8c0d-ec2c58e9c8e4
+
+
 
 
 
