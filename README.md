@@ -33,6 +33,11 @@ The 'Engineer' class will override the `calculateAnnualSalary()` method to inclu
 4. Create two instances of the 'Manager' class, providing their names, salaries, and departments. Calculate and display their annual salaries, taking into account the bonuses for managers.
 5. Create an instance of the 'Engineer' class, providing their name, salary, and experience years. Calculate and display their annual salary, taking into account the experience-based bonuses.
 
+### Desired Outcome
+
+
+
+
 By completing this task, you will gain a better understanding of class inheritance, method overriding, and polymorphism in JavaScript. You will learn how to create and work with different classes and subclasses to model real-world scenarios, where different roles may have distinct behaviors and properties.
 
 Happy coding!
