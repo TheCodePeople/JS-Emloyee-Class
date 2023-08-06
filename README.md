@@ -35,10 +35,9 @@ The 'Engineer' class will override the `calculateAnnualSalary()` method to inclu
 
 ### Desired Outcome
 
-https://github.com/TheCodePeople/JS-Emloyee-Class/assets/125884625/4f065609-2139-4c4e-8c0d-ec2c58e9c8e4
+https://github.com/TheCodePeople/JS-Emloyee-Class/assets/125884625/1c4c64ed-2c16-41b0-acb0-a8994888bda7
 
-
-
+ 
 
 
 By completing this task, you will gain a better understanding of class inheritance, method overriding, and polymorphism in JavaScript. You will learn how to create and work with different classes and subclasses to model real-world scenarios, where different roles may have distinct behaviors and properties.
