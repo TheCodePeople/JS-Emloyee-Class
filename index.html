@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Company System</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Company System</h1>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="animate__rubberBand">Company System</h1>
     <form id="employeeForm">
-        <h2>Employee Details</h2>
-        <label for="employeeName">Name:</label>
-        <input type="text" id="employeeName" required>
-        <label for="employeeSalary">Salary:</label>
-        <input type="number" id="employeeSalary" required>
-        <label for="employeeType">Employee Type:</label>
-        <select id="employeeType">
-            <option value="employee">Employee</option>
-            <option value="manager">Manager</option>
-            <option value="engineer">Engineer</option>
-        </select>
-        <label for="managerDepartment" id="managerDepartmentLabel">Department:</label>
-        <input type="text" id="managerDepartment" required>
-        <label for="engineerExperience" id="engineerExperienceLabel">Experience Years:</label>
-        <input type="number" id="engineerExperience" required>
-        <button type="submit">Add Employee</button>
+      <h2>Employee Details</h2>
+      <label for="employeeName">Name:</label>
+      <input type="text" id="employeeName" required />
+      <label for="employeeSalary">Salary:</label>
+      <input type="number" id="employeeSalary" required />
+      <label for="employeeType">Employee Type:</label>
+      <select id="employeeType">
+        <option value="engineer">Engineer</option>
+        <option value="manager">Manager</option>
+        <option value="employee">Employee</option>
+      </select>
+      <label for="managerDepartment" id="managerDepartmentLabel"
+        >Department:</label
+      >
+      <input type="text" id="managerDepartment" required />
+      <label for="engineerExperience" id="engineerExperienceLabel"
+        >Experience Years:</label
+      >
+      <input type="number" id="engineerExperience" required />
+      <button type="submit">Add Employee</button>
     </form>
-    <div id=" results">
-        <h2>Results</h2>
-        <div id="employeeResults"></div>
+    <div id="results">
+      <h2>Results</h2>
+      <div class="tables-container">
+        <div class="table-container manager-table">
+          <table class="manager-table">
+            <caption>
+              Manager Employees
+            </caption>
+            <tbody id="managerTableBody"></tbody>
+          </table>
+        </div>
+        <div class="table-container engineer-table">
+          <table class="engineer-table">
+            <caption>
+              Engineer Employees
+            </caption>
+            <tbody id="engineerTableBody"></tbody>
+          </table>
+        </div>
+        <div class="table-container employee-table">
+          <table class="employee-table">
+            <caption>
+              Regular Employees
+            </caption>
+            <tbody id="employeeTableBody"></tbody>
+          </table>
+        </div>
+      </div>
     </div>
-    <script src="company.js"></script>
-</body>
+    <script src="./company.js"></script>
+  </body>
 </html>
