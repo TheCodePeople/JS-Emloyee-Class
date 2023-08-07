@@ -34,7 +34,25 @@ input {
   padding: 5px 0;
   margin-bottom: 10px;
 }
+#managerDepartment
+{
+  display: none;
+}
+#engineerExperience
+{
+  display: none;
+  
+}
+label#managerDepartmentLabel
+{
+  display: none;
+  
+}
+label#engineerExperienceLabel
+{
+  display: none;
 
+}
 button {
   padding: 8px 15px;
   background-color: #007bff;
