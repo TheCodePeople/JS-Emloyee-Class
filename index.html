@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="darkModeToggle"><span id="darkModeIcon">🌙</span></button>
     <h1>Company System</h1>
     <form id="employeeForm">
         <h2>Employee Details</h2>
         <label for="employeeName">Name:</label>
-        <input type="text" id="employeeName" required>
+        <input type="text" id="employeeName"  placeholder="EMPLOYEE NAME" required>
         <label for="employeeSalary">Salary:</label>
-        <input type="number" id="employeeSalary" required>
+        <input type="number" id="employeeSalary" placeholder="EMPLOYEE SALARY" required>
         <label for="employeeType">Employee Type:</label>
         <select id="employeeType">
+            <option>Select</option>
             <option value="employee">Employee</option>
             <option value="manager">Manager</option>
             <option value="engineer">Engineer</option>
@@ -24,11 +26,10 @@
         <input type="text" id="managerDepartment" required>
         <label for="engineerExperience" id="engineerExperienceLabel">Experience Years:</label>
         <input type="number" id="engineerExperience" required>
-        <button type="submit">Add Employee</button>
+        <button type="submit" id="submit">Add Employee</button>
     </form>
-    <div id=" results">
+    <div class="results">
         <h2>Results</h2>
-        <div id="employeeResults"></div>
     </div>
     <script src="company.js"></script>
 </body>

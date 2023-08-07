@@ -6,7 +6,29 @@ body {
   justify-items: center;
   align-items: center;
 }
+.dark {
+  background-color: #333;
+  color: #fff;
+}
 
+.dark .results {
+  background-color: #333; /* Dark background color */
+  color: white;
+  transition: background-color 0.5s;}
+#darkModeToggle {
+  position: fixed;
+  width: fit-content;
+  font-size: 4rem;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  background-color: transparent;
+}
+#darkModeToggle:hover {
+  color: #999;
+}
 h1 {
   text-align: center;
 }
@@ -17,7 +39,12 @@ form {
   padding: 10px;
   margin-bottom: 20px;
 }
-
+#employeeForm {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
 label {
   display: block;
   margin-bottom: 5px;
@@ -50,12 +77,49 @@ button:hover {
   background-color: #0056b3;
 }
 
-#results {
-  border: 1px solid #ccc;
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  border-radius: 20px;
+  background-color: #fff; /* Dark background color */
+  transition: background-color 0.5s;
 }
 
 #results h2 {
   margin-bottom: 10px;
   display: none;
+}
+.employee-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+.employeeAndSalaryDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.salaryDiv {
+  text-align: left;
+  border-left: 1px solid;
+  padding-left: 10px;
+}
+.employeeDiv {
+  text-align: left;
+  padding-right: 10px;
+}
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding-right: 20px;
 }
